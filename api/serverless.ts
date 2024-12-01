@@ -11,7 +11,7 @@ app.get('/', async (req, res) => {
 });
 
 app.get('/qrcode', async (request: FastifyRequest, reply: FastifyReply) => {
-  const redirectToUrl = '/api/redirect';
+  const redirectToUrl = '/redirect';
 
   try {
     const qrCodeImage = await QRCode.toDataURL(
