@@ -1,0 +1,29 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/api/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/api/server.js",
+    "vercel": "vercel dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node-cron": "3.0.11",
+    "fastify": "5.1.0",
+    "firebase": "11.0.2",
+    "node-cron": "3.0.3",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "@types/qrcode": "1.5.5",
+    "@vercel/node": "3.2.27",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}
